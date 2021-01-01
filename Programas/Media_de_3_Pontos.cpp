@@ -1,4 +1,4 @@
-Implemente uma função para calcular a distância média entre três pontos num único plano,
+/*Implemente uma função para calcular a distância média entre três pontos num único plano,
 onde as coordenadas destes pontos são: (x1, y1), (x2, y2), (x3, y2);
 
 Ex:
@@ -32,3 +32,22 @@ Depois faz a soma das três distância e divide por 3, por 3 porque são 3 ponto
 DM = (2,8 + 2,8 + 5,6) / 3
 
 Dm = 3,7
+
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int calcularDistancia(float pa1, float pb1, float pa2, float pb2, float pa3, float pb3){
+
+    CD = raiz( ((pa2 - pa1) ^ 2) + (pb2 - pb1) ^ 2) );
+
+
+}
+
+
+
+int main(){
+
+}

@@ -54,4 +54,44 @@ int main (void) {
            
     return 0;
 }
-    
+////////////////////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void) {
+	
+	int mat[3][3] = {{4, 5}, {2, 1}, {3, 6}};
+	int n = 3;
+  
+ 
+    for (int i = 0; i < n; i++) {
+    	
+        for (int j = 0; j < n; j++) {
+                
+            for (int l = 0; l < n; l++) {
+            	
+                for (int c = 0; c < n; c++) {
+                        
+                    if (mat[i][j] < mat[l][c]) {
+                        int aux = mat[i][j];
+                        mat[i][j] = mat[l][c];
+                        mat[l][c] = aux;
+                    }
+                }
+            }
+        }
+    }
+       
+            
+    printf("\n\n");
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+            printf(" %02d", mat[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+ 
+           
+    return 0;
+}
