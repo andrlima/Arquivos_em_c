@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
-
 
 int main(){
 
@@ -15,7 +13,7 @@ int main(){
     for(int linha = 0; linha < n; linha++){
 
         // Vau percorrer a coluna [A1][A1]
-        for(int coluna = 0; coluna < n; linha++){
+        for(int coluna = 0; coluna < n; coluna++){
 
             // Percorrer a matriz para trocar de lugar os valores
             for(int lin = 0; lin < n; lin++){
@@ -50,8 +48,6 @@ int main(){
         printf("\n");
 
     }
-
-
 
 
 }

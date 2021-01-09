@@ -39,10 +39,15 @@ Dm = 3,7
 #include <stdlib.h>
 
 
-int calcularDistancia(float pa1, float pb1, float pa2, float pb2, float pa3, float pb3){
+float calcularDistancia(float pa1, float pb1, float pa2, float pb2, float pa3, float pb3){
 
-    CD = raiz( ((pa2 - pa1) ^ 2) + (pb2 - pb1) ^ 2) );
+    float Dab = raiz( ((pa2 - pa1) ^ 2) + (pb2 - pb1) ^ 2) );
+    float Dbc = raiz( ((pa3 - pa2) ^ 2) + (pb3 - pb2) ^ 2) );
+    float Dac = raiz( ((pa3 - pa1) ^ 2) + (pb3 - pb1) ^ 2) );
 
+    float Dm = (Dab + Dbc + Dac) / 3;
+
+    return Dm;
 
 }
 
